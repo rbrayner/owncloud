@@ -4,6 +4,6 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y supervisor redis-
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-EXPOSE 9000
+EXPOSE 80 443
 
 CMD ["/usr/bin/supervisord"]
