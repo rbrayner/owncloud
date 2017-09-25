@@ -1,4 +1,4 @@
-FROM owncloud:fpm
+FROM owncloud:latest
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y supervisor redis-server php5-redis
 
