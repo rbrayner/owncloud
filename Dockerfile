@@ -1,6 +1,6 @@
-FROM owncloud:10.0.4
+FROM owncloud:10.0.3
 
-RUN apt-get update && apt-get upgrade -y && apt-get install -y supervisor redis-server php-redis sudo cron
+RUN apt-get update && apt-get upgrade -y && apt-get install -y supervisor redis-server php5-redis sudo cron
 
 
 # Add crontab file in the cron directory
