@@ -15,13 +15,13 @@ RUN touch /var/log/cron.log
 RUN mkdir -p /etc/ssl/owncloud/certs
 RUN mkdir -p /etc/ssl/owncloud/private
 
-RUN update-ca-certificates
-RUN a2enmod rewrite && a2enmod headers && a2enmod ssl
-COPY owncloud-ssl.conf /etc/apache2/conf-available/owncloud-ssl.conf
+#RUN update-ca-certificates
+#RUN a2enmod rewrite && a2enmod headers && a2enmod ssl
+#COPY owncloud-ssl.conf /etc/apache2/conf-available/owncloud-ssl.conf
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-RUN a2enconf owncloud-ssl.conf
+#RUN a2enconf owncloud-ssl.conf
 
 EXPOSE 80 443
 
