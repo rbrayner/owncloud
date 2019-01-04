@@ -24,8 +24,8 @@ COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 RUN mkdir /scripts
 COPY perms.sh /scripts/
-RUN chown www-data.www-data /scripts/perms.sh
-RUN chmod 550 /scripts/perms.sh
+RUN chown root.root /scripts/perms.sh
+RUN chmod 750 /scripts/perms.sh
 
 
 RUN a2enconf owncloud-ssl.conf
