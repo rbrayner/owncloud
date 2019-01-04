@@ -25,27 +25,31 @@ rootuser='root'
 # Post installation/upgrade:   either n/n/n or y/y/n
 # Reset all perm & own:        either n/n/n or y/y/n
 
-echo
-read -p "Do you want to use ln instead of mkdir for creating directories (y/N)? " -r -e answer
-if echo "$answer" | grep -iq "^y"; then
-  uselinks="y"
-else
-  uselinks="n"
-fi
+#echo
+#read -p "Do you want to use ln instead of mkdir for creating directories (y/N)? " -r -e answer
+#if echo "$answer" | grep -iq "^y"; then
+#  uselinks="y"
+#else
+#  uselinks="n"
+#fi
 
-read -p "Do you also want to chmod/chown these links (y/N)? " -r -e answer
-if echo "$answer" | grep -iq "^y"; then
-  chmdir="y"
-else
-  chmdir="n"
-fi
+#read -p "Do you also want to chmod/chown these links (y/N)? " -r -e answer
+#if echo "$answer" | grep -iq "^y"; then
+#  chmdir="y"
+#else
+#  chmdir="n"
+#fi
 
-read -p "If you upgrade, do you want to copy an existing config.php file (y/N)? " -r -e answer
-if echo "$answer" | grep -iq "^y"; then
-  upgrdcfg="y"
-else
-  upgrdcfg="n"
-fi
+#read -p "If you upgrade, do you want to copy an existing config.php file (y/N)? " -r -e answer
+#if echo "$answer" | grep -iq "^y"; then
+#  upgrdcfg="y"
+#else
+#  upgrdcfg="n"
+#fi
+
+uselinks="n"
+chmdir="n"
+upgrdcfg="n"
 
 printf "\nCreating or linking possible missing directories \n"
 mkdir -p $ocpath/updater
