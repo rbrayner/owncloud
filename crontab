@@ -1,2 +1,2 @@
 */1 * * * * root sudo -u www-data /usr/local/bin/php -f /var/www/html/cron.php
-*/15 * * * * root sudo -u www-data /usr/local/bin/php /var/www/html/occ files:scan --all
+*/45 * * * * root sudo -u www-data /usr/local/bin/php /var/www/html/occ files:scan --all
