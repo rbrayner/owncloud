@@ -21,6 +21,13 @@ COPY owncloud-ssl.conf /etc/apache2/conf-available/owncloud-ssl.conf
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
+
+RUN mkdir /scripts
+COPY perms.sh /scripts/
+RUN chown root.root /scripts/perms.sh
+RUN chmod 750 /scripts/perms.sh
+
+
 RUN a2enconf owncloud-ssl.conf
 
 EXPOSE 80 443
