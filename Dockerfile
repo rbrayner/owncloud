@@ -2,7 +2,6 @@ FROM owncloud:10.0.10
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y supervisor sudo cron
 
-
 # Add crontab file in the cron directory
 ADD crontab /etc/cron.d/owncloud
 
