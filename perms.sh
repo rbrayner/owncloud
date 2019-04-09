@@ -1,9 +1,9 @@
 #!/bin/bash
 
-ocpath='/var/www/html'
-ocdata='/var/www/html/data'
-ocapps_external='/var/www/html/apps/external'
-oldocpath='/var/www/html/owncloud.old'
+ocpath='/var/www/owncloud'
+ocdata='/mnt/data'
+ocapps_external='/var/www/owncloud/apps/external'
+oldocpath='/var/www/owncloud/owncloud.old'
 linkdata="/var/mylinks/data"
 linkapps-external="/var/mylinks/apps-external"
 htuser='www-data'
