@@ -1,4 +1,4 @@
-FROM owncloud/server:10.2
+FROM owncloud/server:10.2.1
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y supervisor sudo cron
 
