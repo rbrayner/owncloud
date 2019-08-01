@@ -1,2 +1,2 @@
-* */2 * * * root sudo -u www-data /usr/bin/php /var/www/owncloud/occ files:scan --all
-0 3 * * * root /scripts/perms.sh
+30 0 * * * root sudo -u www-data /usr/bin/php /var/www/owncloud/occ files:scan --all
+0 5 * * * root /scripts/perms.sh
