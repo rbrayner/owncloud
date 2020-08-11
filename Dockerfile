@@ -18,3 +18,4 @@ RUN chown root.root /scripts/perms.sh
 RUN chmod 750 /scripts/perms.sh
 
 EXPOSE 80
+
