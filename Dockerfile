@@ -19,3 +19,4 @@ RUN chmod 750 /scripts/perms.sh
 
 EXPOSE 80
 
+
